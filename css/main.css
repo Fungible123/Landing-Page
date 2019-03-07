@@ -1,0 +1,134 @@
+/* General Styling */
+
+html {
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #FFFFFF;
+	color: #000000;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 100%;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+::-moz-selection {
+    background-color: #5D90FF;
+    color: #FFFFFF;
+}
+
+::selection {
+    background-color: #5D90FF;
+    color: #FFFFFF;
+}
+
+/* Typograhphy */
+
+h1,h2,h3 {
+    font-weight: 300;
+    line-height: normal;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    color: #000000;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+}
+
+/* Main header */
+
+    /** Logo **/
+
+    /** Navigation Bar **/
+
+/* Home Section */
+
+/* Features Section */
+
+    /** Feature Title **/
+
+    /** Features Tabs **/
+
+        /*** Tab Panes ***/
+
+        /*** Contents of the Tab ***/
+
+    /** Features Photo **/
+
+/* Designs Section */
+
+    /** Designs Title **/
+
+    /** Designs Content **/
+
+/* Services Section */
+
+    /** Services Title **/
+
+    /** Services Cards **/
+
+        /*** Individual Cards ***/
+
+/* Contact and Footer Section */
+
+    /** Contact Section **/
+
+        /*** Form area ***/
+
+    /** Footer Section **/
+
+        /*** About me ***/
+
+        /*** Follow me ***/
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+}
