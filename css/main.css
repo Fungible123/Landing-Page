@@ -12,7 +12,7 @@ body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	font-size: 100%;
 }
 
@@ -70,18 +70,27 @@ p {
 }
 
 /* Main header */
-    .main-header {
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-    }
+.main-header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    display: inline-block;
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0);
+}
 
     /** Logo **/
 
     .logo {
         float: left;
         max-width: 40%;
+        height: 100%;
         font-family: 'Fjalla One', sans-serif;
+    }
+
+    .logo a {
+        color: #4B73CC;
     }
 
     /** Navigation Bar **/
@@ -89,6 +98,7 @@ p {
     .navigation-bar {
         float: right;
         max-width: 60%;
+        height: 100%;
     }
 
     .list-container {
@@ -98,11 +108,97 @@ p {
     .list-container li {
         display: inline;
         margin-left: 30px;
+        padding-left: 30px;
         text-transform: uppercase;
         font-size: .9em;
     }
 
+    .list-container li a {
+        color: #4B73CC;
+    }
+
+    .list-container li a:hover {
+        color: #FFFFFF;
+    }
+
 /* Home Section */
+.home-section {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/pexels-photo-1229861.jpeg) no-repeat center center/cover;
+    z-index: -10;
+    padding: 90px 0px 0px 0px;
+}
+
+.home-section-overlay {
+    background-color: rgba(47, 72, 127, 40%);
+    height: 100vh;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    padding: 45px 0px;
+}
+
+.home-section .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    /* Support for IE 10 */
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-direction: column;
+    -ms-flex-align: center;
+}
+
+.home-section .container h2 {
+    margin: 0px;
+    color: #FFFFFF;
+}
+
+.home-section .container h1 {
+    color: #FFFFFF;
+    font-size: 4rem;
+}
+
+.form-wrapper {
+    position: relative;
+    top: 5%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+}
+
+.online-form {
+    position: relative;
+    padding: 20px 50px;
+}
+
+.input-control {
+    width: 100%;
+    background: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    outline: none;
+    font-size: 18px;
+}
+
+.button-control {
+    position: absolute;
+    top: 20px;
+    right: -80px;
+    cursor: pointer;
+    color: #AAC4FF;
+    background: #5D90FF;
+    border: 0px;
+    width: 40%;
+    height: 55px;
+    border-radius: 50px;
+    outline: none;
+}
+
 
 /* Features Section */
 
