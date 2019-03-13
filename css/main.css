@@ -32,14 +32,18 @@ a {
     color: #000000;
 }
 
-::-moz-selection {
+::selection {
     background-color: #5D90FF;
     color: #FFFFFF;
 }
 
-::selection {
-    background-color: #5D90FF;
-    color: #FFFFFF;
+.button-control {
+    cursor: pointer;
+    color: #AAC4FF;
+    background: #5D90FF;
+    outline: none;
+    border: 0px;
+    border-radius: 50px;
 }
 
 /* Typograhphy */
@@ -74,17 +78,24 @@ p {
     position: fixed;
     z-index: 1;
     top: 0;
-    display: inline-block;
     width: 100%;
     height: 80px;
     background: rgba(0, 0, 0, 0);
 }
 
+.main-header .container {
+    display: flex;
+    flex-direction: row;
+
+    /* Support for IE 10 */
+    display: -ms-flexbox;
+    -ms-flex-direction: row;
+}
+
     /** Logo **/
 
     .logo {
-        float: left;
-        max-width: 40%;
+        width: 40%;
         height: 100%;
         font-family: 'Fjalla One', sans-serif;
     }
@@ -96,17 +107,21 @@ p {
     /** Navigation Bar **/
 
     .navigation-bar {
-        float: right;
-        max-width: 60%;
+        width: 60%;
         height: 100%;
     }
 
     .list-container {
         margin: 30px 0px;
+        display: flex;
+        flex-direction: row;
+
+        /* Support for IE 10 */
+        display: -ms-flexbox;
+        -ms-flex-direction: row;
     }
 
     .list-container li {
-        display: inline;
         margin-left: 30px;
         padding-left: 30px;
         text-transform: uppercase;
@@ -185,38 +200,280 @@ p {
     font-size: 18px;
 }
 
-.button-control {
+.message-redirect {
     position: absolute;
     top: 20px;
     right: -80px;
-    cursor: pointer;
-    color: #AAC4FF;
-    background: #5D90FF;
-    border: 0px;
     width: 40%;
     height: 55px;
-    border-radius: 50px;
-    outline: none;
 }
-
 
 /* Features Section */
 
-    /** Feature Title **/
+.features-section {
+    width: 100%;
+    height: 100vh;
+    padding: 100px 0px 0px 0px;
+}
 
-    /** Features Tabs **/
+.features-tab-photo-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 50px;
+
+    /* Support for IE 10 */
+    display: -ms-flexbox;
+    -ms-flex-direction: row;
+}
+
+    /** Features Tabs using pure css / no js **/
+
+    .features-tabs {
+        padding-right: 100px;
+        width: 100%;
+    }
+
+    .state {
+        display: none;
+    }
+
+    .flex-tabs {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        /* Support for IE 10 */
+        display: -ms-flexbox;
+        -ms-flex-pack: justify;
+        -ms-flex-wrap: wrap;
+    }
 
         /*** Tab Panes ***/
 
+        .tab:hover {
+            background-color: #eee;
+        }
+
+        .tab {
+            flex-grow: 1;
+            max-height: 40px;
+            display: inline-block;
+            padding: 10px;
+            vertical-align: top;
+            cursor: hand;
+            cursor: pointer;
+            border-left: 10px solid #ccc;
+
+            /* Support for IE 10 */
+            -ms-flex-positive: 1;
+        }
+
+        #tab-one:checked ~ .tabs #tab-one-label,
+        #tab-two:checked ~ .tabs #tab-two-label,
+        #tab-three:checked ~ .tabs #tab-three-label,
+        #tab-four:checked ~ .tabs #tab-four-label {
+        background-color: #fff;
+        cursor: default;
+        border-left-color: #5D90FF;
+        }
+
         /*** Contents of the Tab ***/
+        
+        .panel {
+            background-color: #fff;
+            padding: 20px;
+            min-height: 300px;
+            display: none;
+            width: 100%;
+            flex-basis: auto;
+            
+            /* Support for IE 10 */
+            -ms-flex-preferred-size: auto;
+        }
+
+        #tab-one:checked ~ .tabs #tab-one-panel,
+        #tab-two:checked ~ .tabs #tab-two-panel,
+        #tab-three:checked ~ .tabs #tab-three-panel,
+        #tab-four:checked ~ .tabs #tab-four-panel {
+        display: block;
+        }
 
     /** Features Photo **/
 
+    .features-photo img {
+        width: 100%;
+    }
+
+    /* IE10 + CSS Hack for the Features and Photo container */
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        .features-tabs {
+            padding-right: 100px;
+            width: 50%;
+        }
+
+        .features-photo-container {
+            width: 40%;
+        }
+        
+    }
+
 /* Designs Section */
 
-    /** Designs Title **/
+.designs-section {
+    width: 100%;
+    height: 100vh;
+    padding: 50px 0px;
+    background: #E3DFFC;
+}
+
+.box-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    /* Support for IE 10 */
+    display: -ms-flexbox;
+    -ms-flex-direction: row;
+}
+
+.designs-section .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+
+    /* Support for IE 10 */
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-direction: column;
+    -ms-flex-align: center;
+}
 
     /** Designs Content **/
+
+    .designs-container {
+        position: relative;
+        padding: 20px;
+    }
+
+    .designs-container>img {
+        width: 100%;
+    }
+
+    .designs-container .design-content-overlay {
+        background: #2F547F;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        opacity: 0;
+        transition: 0.2s opacity;
+        transition-delay: 0.2s;
+    }
+
+    .designs-container:hover .design-content-overlay {
+        transition-delay: 0s;
+        opacity: 0.8;
+    }
+
+    .designs-container .designs-content {
+        position: absolute;
+        left: 50px;
+        right: 50px;
+        top: 25%;
+        text-align: center;
+        -ms-transform: translateX(-25%);
+        transform: translateX(-25%);
+    }
+
+    .designs-container .designs-content h3 {
+        -ms-transform: translateX(-10%);
+        transform: translateX(-10%);
+        opacity: 0;
+        color: #FFF;
+        margin-bottom: 10px;
+        transition: 0.2s all;
+        transition-delay: 0.1s;
+    }
+
+    .designs-container:hover .designs-content h3 {
+        -ms-transform: translateX(25%);
+        transform: translateX(25%);
+        opacity: 1;
+        -webkit-transition-delay: 0.1s;
+        transition-delay: 0.1s;
+    }
+
+    .designs-container .designs-content span {
+        display: block;
+        text-transform: uppercase;
+        -ms-transform: translateX(-10%);
+        transform: translateX(-10%);
+        opacity: 0;
+        color: #6195FF;
+        margin-bottom: 5px;
+        transition: 0.2s all;
+        transition-delay: 0.2s;
+    }
+
+    .designs-container:hover .designs-content span {
+        -ms-transform: translateX(25%);
+        transform: translateX(25%);
+        opacity: 1;
+        transition-delay: 0s;
+    }
+
+    .designs-container .design-links {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .designs-container .design-links a {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-color: #6195FF;
+        color: #FFF;
+        line-height: 50px;
+        text-align: center;
+        opacity: 0;
+        -ms-transform: translateX(50%);
+        transform: translateX(50%);
+        transition: 0.2s all;
+        transition-delay: 0.1s;
+    }
+
+    .designs-container:hover .design-links a {
+        -ms-transform: translateX(135%);
+        transform: translateX(135%);
+        opacity: 1;
+        transition-delay: 0s;
+    }
+
+    .design-links a {
+        color: #6195FF;
+        transition: 0.2s opacity;
+    }
+
+    .design-links a:hover {
+        color: #5F6E7F;
+    }
+
+    /* IE10 + CSS Hack for the Features and Photo container */
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        .designs-container {
+            width: 25%;
+        }
+        
+    }
+
+    .responsive-image {
+        display:block;
+        max-width:100%;
+        height:auto;
+    }
 
 /* Services Section */
 
@@ -240,18 +497,28 @@ p {
 
 /* Media Queries */
 
+@media (max-width: 768px) {
+    .features-tabs {
+        margin: 20px;
+        width: 100%;
+    }
+}
+
 @media (min-width: 768px) {
     .container {
       width: 750px;
     }
 }
+
 @media (min-width: 992px) {
     .container {
       width: 970px;
     }
 }
+
 @media (min-width: 1200px) {
     .container {
       width: 1170px;
     }
 }
+

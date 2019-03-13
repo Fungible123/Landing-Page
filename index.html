@@ -46,7 +46,7 @@
                 <div class="form-wrapper">
                     <form action="" class="online-form" method="get">
                         <input type="email" name="email" class="input-control" placeholder="Enter your email">
-                        <button type="submit" class="button-control">Get Started</button>
+                        <button type="submit" class="button-control message-redirect">Get Started</button>
                     </form>
                 </div>
             </div>
@@ -64,54 +64,52 @@
             </div>
             <!-- End Feature Title-->
 
-            <!-- Features Tabs -->
-            <div class="features-tabs">
-                <!-- Tab Panes -->
-                <ul class="tabs">
-                    <li class="active"><a href="#">Responsive</a></li>
-                    <li><a href="#">Mobile</a></li>
-                    <li><a href="#">Up-to-date</a></li>
-                </ul>
-                <!-- End Tab Panes -->
-
-                <!-- Contents of the Tab -->
-                <div class="tab-content">
-                    <div class="responsive-tab">
-                        <div class="tab-item">
+            <div class="features-tab-photo-container">
+                <!-- Features Tabs -->
+                <div class="features-tabs">
+    
+                    <input class="state" type="radio" title="tab-one" name="tabs-state" id="tab-one" checked />
+                    <input class="state" type="radio" title="tab-two" name="tabs-state" id="tab-two" />
+                    <input class="state" type="radio" title="tab-three" name="tabs-state" id="tab-three" />
+                    <input class="state" type="radio" title="tab-four" name="tabs-state" id="tab-four" />
+                    
+                    <div class="tabs flex-tabs">
+                        <!-- Tab Panes -->
+                        <label for="tab-one" id="tab-one-label" class="tab">Responsive</label>
+                        <label for="tab-two" id="tab-two-label" class="tab">Mobile</label>
+                        <label for="tab-three" id="tab-three-label" class="tab">Up-to-date</label>
+                        <!-- End Tab Panes -->
+                        
+                        <!-- Contents of the Tab -->
+                        <div id="tab-one-panel" class="panel active">
                             <h3>Grid / Flexbox</h3>
                             <p>Sugar single shot lungo percolator caffeine con panna americano. Latte aged, to go decaffeinated lungo, est carajillo iced black java flavour acerbic. Chicory, aftertaste irish trifecta, black strong doppio cortado variety plunger pot body.</p>
-                        </div>
-                        <div class="tab-item">
                             <h3>Adapts Easily</h3>
                             <p>Sugar single shot lungo percolator caffeine con panna americano. Latte aged, to go decaffeinated lungo, est carajillo iced black java flavour acerbic. Chicory, aftertaste irish trifecta, black strong doppio cortado variety plunger pot body.</p>
                         </div>
-                    </div>
-
-                    <div class="mobile-tab">
-                        <div class="tab-item">
+                        <div id="tab-two-panel" class="panel">
                             <h3>Mobile Friendly</h3>
                             <p>Sugar single shot lungo percolator caffeine con panna americano. Latte aged, to go decaffeinated lungo, est carajillo iced black java flavour acerbic. Chicory, aftertaste irish trifecta, black strong doppio cortado variety plunger pot body.</p>
                         </div>
-                    </div>
-
-                    <div class="uptodate-tab">
-                        <div class="tab-item">
+                        <div id="tab-three-panel" class="panel">
                             <h3>Cross-Browser Compatible</h3>
                             <p>Sugar single shot lungo percolator caffeine con panna americano. Latte aged, to go decaffeinated lungo, est carajillo iced black java flavour acerbic. Chicory, aftertaste irish trifecta, black strong doppio cortado variety plunger pot body.</p>
                         </div>
+                        <!-- End Contents of the Tab -->
+                    </div>
+                
+                </div>
+                <!-- End Features Tab -->
+
+                <!-- Features Photo -->
+                <div class="features-photo-container">
+                    <div class="features-photo">
+                        <img src="images/responsive-2440940_1280.png" alt="Cross-Browser">
                     </div>
                 </div>
-                <!-- End Contents of Tab -->
+                <!-- End Features Photo-->
             </div>
-            <!-- End Features Tab -->
-
-            <!-- Features Photo -->
-            <div class="features-photo-container">
-                <div class="features-photo">
-                    <img src="images/responsive-2440940_1280.png" alt="Cross-Browser">
-                </div>
-            </div>
-            <!-- End Features Photo-->
+            <!-- End Features and Photo container -->
         </div>
     </section>
     <!-- End Features Section -->
@@ -127,38 +125,43 @@
             <!-- End Designs Title -->
 
             <!-- Designs Content -->
-            <div class="designs-container">
-                <img src="images/template-1599665_1280.png" alt="" class="responsive-image">
-                <div class="designs-content">
-                    <span>Design 1</span>
-                    <h3>Click Icon to View</h3>
-                    <div class="design-links">
-                        <a href="#"><i class="fa fa-external-link-alt"></i></a>
-                        <a href="images/template-1599665_1280.png" class="photobox"><i class="fa fa-search"></i></a>
+            <div class="box-container">
+                <div class="designs-container">
+                    <img src="images/template-1599665_1280.png" alt="" class="responsive-image">
+                    <div class="design-content-overlay"></div>
+                    <div class="designs-content">
+                        <span>Design 1</span>
+                        <h3>Click Icon to View</h3>
+                        <div class="design-links">
+                            <a href="#"><i class="fa fa-external-link-alt"></i></a>
+                            <a href="images/template-1599665_1280.png" class="photobox"><i class="fa fa-search"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="designs-container">
-                <img src="images/template-1599663_1280.png" alt="" class="responsive-image">
-                <div class="designs-content">
-                    <span>Design 2</span>
-                    <h3>Click Icon to View</h3>
-                    <div class="design-links">
-                        <a href="#"><i class="fa fa-external-link-alt"></i></a>
-                        <a href="images/template-1599663_1280.png" class="photobox"><i class="fa fa-search"></i></a>
+                <div class="designs-container">
+                    <img src="images/template-1599663_1280.png" alt="" class="responsive-image">
+                    <div class="design-content-overlay"></div>
+                    <div class="designs-content">
+                        <span>Design 2</span>
+                        <h3>Click Icon to View</h3>
+                        <div class="design-links">
+                            <a href="#"><i class="fa fa-external-link-alt"></i></a>
+                            <a href="images/template-1599663_1280.png" class="photobox"><i class="fa fa-search"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="designs-container">
-                <img src="images/template-1599667_1280.png" alt="" class="responsive-image">
-                <div class="designs-content">
-                    <span>Design 3</span>
-                    <h3>Click Icon to View</h3>
-                    <div class="design-links">
-                        <a href="#"><i class="fa fa-external-link-alt"></i></a>
-                        <a href="images/template-1599667_1280.png" class="photobox"><i class="fa fa-search"></i></a>
+                <div class="designs-container">
+                    <img src="images/template-1599667_1280.png" alt="" class="responsive-image">
+                    <div class="design-content-overlay"></div>
+                    <div class="designs-content">
+                        <span>Design 3</span>
+                        <h3>Click Icon to View</h3>
+                        <div class="design-links">
+                            <a href="#"><i class="fa fa-external-link-alt"></i></a>
+                            <a href="images/template-1599667_1280.png" class="photobox"><i class="fa fa-search"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -251,8 +254,8 @@
                     </div>
 
                     <div class="textarea-containter">
-                        <textarea name="message" id="" cols="50" rows="10" class="textarea-box" placeholder="Your text here"></textarea>
-                        <button type="submit" class="form-control message-submit">Send Message<img src="images/icons/baseline-arrow_right_alt-24px.svg" alt="arrow right"></button>
+                        <textarea name="message" cols="50" rows="10" class="textarea-box" placeholder="Your text here"></textarea>
+                        <button type="submit" class="button-control message-submit">Send Message<img src="images/icons/baseline-arrow_right_alt-24px.svg" alt="arrow right"></button>
                     </div>
                 </form>
                 <!-- End Form area -->
