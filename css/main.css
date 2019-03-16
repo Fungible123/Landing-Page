@@ -86,8 +86,6 @@ p {
 .main-header .container {
     display: flex;
     flex-direction: row;
-
-    /* Support for IE 10 */
     display: -ms-flexbox;
     -ms-flex-direction: row;
 }
@@ -101,7 +99,7 @@ p {
     }
 
     .logo a {
-        color: #4B73CC;
+        color: #5D90FF;
     }
 
     /** Navigation Bar **/
@@ -115,10 +113,10 @@ p {
         margin: 30px 0px;
         display: flex;
         flex-direction: row;
-
-        /* Support for IE 10 */
+        justify-content: flex-end;
         display: -ms-flexbox;
         -ms-flex-direction: row;
+        -ms-flex-pack: end;
     }
 
     .list-container li {
@@ -129,7 +127,7 @@ p {
     }
 
     .list-container li a {
-        color: #4B73CC;
+        color: #5D90FF;
     }
 
     .list-container li a:hover {
@@ -161,8 +159,6 @@ p {
     height: 100%;
     justify-content: center;
     align-items: center;
-
-    /* Support for IE 10 */
     display: -ms-flexbox;
     -ms-flex-pack: center;
     -ms-flex-direction: column;
@@ -221,8 +217,6 @@ p {
     flex-direction: row;
     width: 100%;
     margin-top: 50px;
-
-    /* Support for IE 10 */
     display: -ms-flexbox;
     -ms-flex-direction: row;
 }
@@ -242,8 +236,6 @@ p {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-
-        /* Support for IE 10 */
         display: -ms-flexbox;
         -ms-flex-pack: justify;
         -ms-flex-wrap: wrap;
@@ -264,8 +256,6 @@ p {
             cursor: hand;
             cursor: pointer;
             border-left: 10px solid #ccc;
-
-            /* Support for IE 10 */
             -ms-flex-positive: 1;
         }
 
@@ -287,8 +277,6 @@ p {
             display: none;
             width: 100%;
             flex-basis: auto;
-            
-            /* Support for IE 10 */
             -ms-flex-preferred-size: auto;
         }
 
@@ -332,8 +320,6 @@ p {
     padding: 30px 0px;
     display: flex;
     flex-direction: row;
-
-    /* Support for IE 10 */
     display: -ms-flexbox;
     -ms-flex-direction: row;
 }
@@ -343,8 +329,6 @@ p {
     flex-direction: column;
     height: 100%;
     justify-content: center;
-
-    /* Support for IE 10 */
     display: -ms-flexbox;
     -ms-flex-pack: center;
     -ms-flex-direction: column;
@@ -594,8 +578,6 @@ p {
 .contact-footer .container {
     display: flex;
     flex-direction: column;
-
-    /* Support for IE 10 */
     display: -ms-flexbox;
     -ms-flex-direction: column;
 }
@@ -629,8 +611,6 @@ p {
             flex-direction: row;
             width: 100%;
             justify-content: center;
-
-            /* Support for IE 10 */
             display: -ms-flexbox;
             -ms-flex-direction: row;
             -ms-flex-pack: center
@@ -640,8 +620,6 @@ p {
             width: 50%;
             display: flex;
             flex-direction: column;
-
-            /* Support for IE 10 */
             display: -ms-flexbox;
             -ms-flex-direction: column;
         }
@@ -663,8 +641,6 @@ p {
             width: 50%;
             display: flex;
             flex-direction: column;
-
-            /* Support for IE 10 */
             display: -ms-flexbox;
             -ms-flex-direction: column;
         }
@@ -716,8 +692,6 @@ p {
         height: 50%;
         display: flex;
         flex-direction: row;
-    
-        /* Support for IE 10 */
         display: -ms-flexbox;
         -ms-flex-direction: row;
     }
@@ -729,13 +703,13 @@ p {
         }
 
         .aboutme p {
-            color: #4B73CC;
+            color: #5D90FF;
         }
 
         .aboutme p:first-child {
             font-size: 1em;
-            font-weight: 2;
-            color: rgb(254, 254, 255);
+            font-weight: bolder;
+            color: #5D90FF;
         }
 
         /*** Follow me ***/
@@ -748,14 +722,12 @@ p {
         .followme p {
             font-size: 1em;
             font-weight: 2;
-            color: rgb(254, 254, 255);
+            color: #5D90FF;
         }
 
         .followme-icons {
             display: flex;
             flex-direction: row;
-
-            /* Support for IE 10 */
             display: -ms-flexbox;
             -ms-flex-direction: row;
         }
@@ -765,6 +737,16 @@ p {
             max-height: 30px;
             margin: 10px;
         }
+
+/* Copyright */
+
+.copyright {
+    text-align: center;
+}
+
+.copyright p {
+    color: #5D90FF;
+}
 
 /* Media Queries */
 
