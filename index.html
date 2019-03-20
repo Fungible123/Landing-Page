@@ -17,45 +17,51 @@
     
     <!-- Preloader here -->
 
-    <!-- Main header -->
-    <header class="main-header">
-        <div class="container">
-            <!-- Logo -->
-            <h3 class="logo"><a href="#">Landing Page</a></h3>
-            <!-- Navigation Bar -->
-            <nav class="navigation-bar">
-                <ul class="list-container">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#designs">Designs</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav> 
-            <!-- End Navigation -->
-        </div>
-    </header>
-    <!-- End Header -->
+  
 
-    <!-- Home Section -->
-    <section class="home-section" id="home">
-        <div class="home-section-overlay">
-            <div class="container">
-                <h2>Need a professional landing page?</h2>
-                <h1>Send me a message!</h1>
-                <div class="form-wrapper">
-                    <form action="" class="online-form" method="get">
-                        <input type="email" name="email" class="input-control" placeholder="Enter your email">
-                        <button type="submit" class="button-control message-redirect">Get Started</button>
-                    </form>
+    <!-- Main header -->
+    <div class="header-wrapper">
+        <div class="background-overlay">
+            <!-- Header Section -->
+            <header class="main-header nav-transparent">
+                <div class="container">
+                    <!-- Logo -->
+                    <h3 class="logo"><a href="#">Landing Page</a></h3>
+                    <!-- Navigation Bar -->
+                    <nav class="navigation-bar">
+                        <ul class="list-container">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#designs">Designs</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav> 
+                    <!-- End Navigation -->
                 </div>
-            </div>
+            </header>
+            <!-- End Header -->
+
+            <!-- Home Section -->
+            <section class="home-section anchors" id="home">
+                <div class="container">
+                    <h2>Need a professional landing page?</h2>
+                    <h1>Send me a message!</h1>
+                    <div class="form-wrapper">
+                        <form action="" class="online-form" method="get" id="getstarted">
+                            <input type="email" name="email" class="input-control" placeholder="Enter your email" id="getemail">
+                            <button type="submit" class="button-control message-redirect" id="submitemail">Get Started</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- End Home Section -->
         </div>
-    </section>
-    <!-- End Home Section -->
+    </div>
+    <!-- End Main Header -->
 
     <!-- Features Section -->
-    <section class="features-section" id="features">
+    <section class="features-section anchors" id="features">
         <div class="container">
 
             <!-- Feature Title -->
@@ -115,7 +121,7 @@
     <!-- End Features Section -->
 
     <!-- Designs Section -->
-    <section class="designs-section" id="designs">
+    <section class="designs-section anchors" id="designs">
         <div class="container">
 
             <!-- Designs Title -->
@@ -171,7 +177,7 @@
     <!-- End Designs Section -->
 
     <!-- Services Section -->
-    <section class="services-section" id="services">
+    <section class="services-section anchors" id="services">
         <div class="container">
 
             <!-- Services Title -->
@@ -239,7 +245,7 @@
     <!-- End Services Section -->
 
     <!-- Contact and Footer Section -->
-    <section class="contact-footer" id="contact">
+    <section class="contact-footer anchors" id="contact">
         <div class="contact-section-overlay">
             <div class="container">
 
@@ -251,7 +257,7 @@
                     <form action="mail.php" class="contact-form" method="post">
                         <div class="input-container">
                             <input type="text" name="name" placeholder="Enter your name">
-                            <input type="email" name="email" placeholder="Enter your email address">
+                            <input type="email" name="email" placeholder="Enter your email address" id="setemail">
                             <input type="text" name="subject" placeholder="Enter a subject">
                         </div>
 
@@ -296,6 +302,7 @@
         </div>
     </section>
     <!-- End Contact and Footer Section -->
+
 
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="js/main.js"></script>

@@ -13,7 +13,7 @@ body {
 	padding: 0;
 	width: 100%;
 	height: 100vh;
-	font-size: 100%;
+    font-size: 100%;
 }
 
 .container {
@@ -85,14 +85,30 @@ p {
 }
 
 /* Main header */
-.main-header {
-    position: fixed;
-    z-index: 1;
-    top: 0;
+
+.header-wrapper {
+    background: url(../images/pexels-photo-1229861.jpeg) no-repeat center center/cover;
+    background-attachment: fixed;
+    z-index: 2;
+    padding: 0px;
+}
+
+.background-overlay {
+    background-color: rgba(47, 72, 127, 40%);
+    height: 100vh;
     width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0);
+    z-index: 1;
+    padding: 0px;
+}
+
+.main-header {
+    z-index: 4;
+    width: 100%;
     transition: 0.1s all;
+}
+
+.nav-transparent {
+    background: transparent;
 }
 
 .main-header .container {
@@ -110,6 +126,7 @@ p {
         width: 40%;
         height: 100%;
         font-family: 'Fjalla One', sans-serif;
+        z-index: inherit;
     }
 
     .logo a {
@@ -150,29 +167,43 @@ p {
 
     /* Navbar effect on scroll */
 
-    .shadow-effect {
+    .main-header.fixed-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 0px 0px;
+        background-color: #FFF;
         box-shadow: -4px 6px 90px 18px rgba(0,0,0,0.4);
     }
 
-    .navigation-scroll {
-        background: #FFFFFF;
+    .main-header.fixed-nav .logo a {
+        color: #1A3F92;
+    }
+
+    .main-header.fixed-nav .navigation-bar .list-container li a {
+        color: #1A3F92;
+        font-weight: bold;
+    }
+
+    .main-header.fixed-nav .navigation-bar .list-container li a:hover {
+        color: #5D90FF;
+        border-bottom: #5D90FF 2px solid;
+    }
+
+    .list-container li a.nav-link.active {
+        color: #5D90FF;
+        border-bottom: #5D90FF 2px solid;
     }
 
 /* Home Section */
 .home-section {
-    background: url(../images/pexels-photo-1229861.jpeg) no-repeat center center/cover;
-    z-index: -10;
-    padding: 90px 0px 0px 0px;
+    width: 100%;
+    height: 100%;
 }
 
-.home-section-overlay {
-    background-color: rgba(47, 72, 127, 40%);
-    height: 100vh;
-    width: 100%;
-    z-index: 0;
-    position: absolute;
-    top: 0;
-    padding: 45px 0px;
+.home-section.fixed-nav {
+    padding-top: 78px;
 }
 
 .home-section .container {
@@ -229,6 +260,8 @@ p {
 /* Features Section */
 
 .features-section {
+    width: 100%;
+    height: 100vh;
     padding: 100px 0px 0px 0px;
 }
 
@@ -788,3 +821,4 @@ p {
     }
 }
 
+/* PRE-LOADER*/
