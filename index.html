@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/glightbox.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
     
 </head>
@@ -17,7 +18,18 @@
     
     <!-- Preloader here -->
 
-  
+    <div class='preloader fullwidth'>
+        <div class='preloader-dotline'>
+            <div class='dot'></div>
+            <div class='dot'></div>
+            <div class='dot'></div>
+            <div class='dot'></div>
+            <div class='dot'></div>
+            <div class='dot'></div>
+            <div class='dot'></div>
+            <div class='dot'></div>      
+        </div>
+    </div>
 
     <!-- Main header -->
     <div class="header-wrapper">
@@ -33,7 +45,16 @@
                             <li><a href="#home">Home</a></li>
                             <li><a href="#features">Features</a></li>
                             <li><a href="#designs">Designs</a></li>
-                            <li><a href="#services">Services</a></li>
+                            <li class="has-dropdown"><a href="#services">Services<span class="arrowdown">&#10140;</span></a>
+                                <ul class="services-dropdown">
+                                    <li><a href="#">Landing Page</a></li>
+                                    <li><a href="#">Email Template</a></li>
+                                    <li><a href="#">Photography</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Business Site</a></li>
+                                    <li><a href="#">eCommerce</a></li>
+                                </ul>
+                            </li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav> 
@@ -133,42 +154,15 @@
             <!-- Designs Content -->
             <div class="box-container">
                 <div class="designs-container">
-                    <img src="images/template-1599665_1280.png" alt="" class="responsive-image">
-                    <div class="design-content-overlay"></div>
-                    <div class="designs-content">
-                        <span>Design 1</span>
-                        <h3>Click Icon to View</h3>
-                        <div class="design-links">
-                            <a href="#"><i class="fa fa-external-link-alt"></i></a>
-                            <a href="images/template-1599665_1280.png" class="photobox"><i class="fa fa-search"></i></a>
-                        </div>
-                    </div>
+                    <a href="images/template-1599665_1280.png" class="glightboxTest"><img src="images/template-1599665_1280.png" alt="Design 1" class="responsive-image"></a>
                 </div>
 
                 <div class="designs-container">
-                    <img src="images/template-1599663_1280.png" alt="" class="responsive-image">
-                    <div class="design-content-overlay"></div>
-                    <div class="designs-content">
-                        <span>Design 2</span>
-                        <h3>Click Icon to View</h3>
-                        <div class="design-links">
-                            <a href="#"><i class="fa fa-external-link-alt"></i></a>
-                            <a href="images/template-1599663_1280.png" class="photobox"><i class="fa fa-search"></i></a>
-                        </div>
-                    </div>
+                    <a href="images/template-1599663_1280.png" class="glightboxTest"><img src="images/template-1599663_1280.png" alt="Design 2" class="responsive-image"></a>
                 </div>
 
                 <div class="designs-container">
-                    <img src="images/template-1599667_1280.png" alt="" class="responsive-image">
-                    <div class="design-content-overlay"></div>
-                    <div class="designs-content">
-                        <span>Design 3</span>
-                        <h3>Click Icon to View</h3>
-                        <div class="design-links">
-                            <a href="#"><i class="fa fa-external-link-alt"></i></a>
-                            <a href="images/template-1599667_1280.png" class="photobox"><i class="fa fa-search"></i></a>
-                        </div>
-                    </div>
+                    <a href="images/template-1599667_1280.png" class="glightboxTest"><img src="images/template-1599667_1280.png" alt="Design 3" class="responsive-image"></a>
                 </div>
             </div>
             <!-- End Designs Content-->
@@ -245,7 +239,7 @@
     <!-- End Services Section -->
 
     <!-- Contact and Footer Section -->
-    <section class="contact-footer anchors" id="contact">
+    <section class="contact-footer" id="contact">
         <div class="contact-section-overlay">
             <div class="container">
 
@@ -305,6 +299,8 @@
 
 
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Element.prototype.classList"></script>
+    <script src="js/glightbox.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

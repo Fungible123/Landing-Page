@@ -8,6 +8,7 @@ const scroll = new SmoothScroll('.navigation-bar a[href*="#"]', {
 
 let navigationBar = document.querySelector('.main-header');
 let homeSection = document.querySelector('.home-section');
+let dropDown = document.querySelector('.services-dropdown');
 
 window.addEventListener('scroll', function(e) {
 
@@ -16,14 +17,17 @@ window.addEventListener('scroll', function(e) {
     if (lastPosition > 50 ) {
         navigationBar.classList.add("fixed-nav");
         homeSection.classList.add("fixed-nav");
+        dropDown.classList.add('fixed-nav');
     // When window is not scrolled
     } else if (navigationBar.classList.contains("fixed-nav")) {
         navigationBar.classList.remove("fixed-nav");
         homeSection.classList.remove("fixed-nav");
+        dropDown.classList.remove('fixed-nav');
     // When no action is done
     } else {
         navigationBar.classList.remove("fixed-nav");
         homeSection.classList.remove("fixed-nav");
+        dropDown.classList.remove('fixed-nav');
     }
 });
 
@@ -48,3 +52,14 @@ submitBtn.addEventListener('click', function () {
 })
 
 // PRELOADER
+
+window.addEventListener("load", function (){
+    let loader = document.querySelector('.preloader');
+    loader.className += " hidden";
+});
+
+// Modal for Design Images
+
+let lightboxDescription = GLightbox({
+    selector: 'glightboxTest'
+});
