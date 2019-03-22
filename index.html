@@ -250,14 +250,14 @@
                     <!-- Form area -->
                     <form action="mail.php" class="contact-form" method="post">
                         <div class="input-container">
-                            <input type="text" name="name" placeholder="Enter your name">
-                            <input type="email" name="email" placeholder="Enter your email address" id="setemail">
-                            <input type="text" name="subject" placeholder="Enter a subject">
+                            <input type="text" name="name" placeholder="Enter your name" required>
+                            <input type="email" name="email" placeholder="Enter your email address" id="setemail" required>
+                            <input type="text" name="subject" placeholder="Enter a subject" required>
                         </div>
 
                         <div class="textarea-containter">
-                            <textarea name="message" cols="50" rows="10" class="textarea-box" placeholder="Your text here"></textarea>
-                            <button type="submit" class="button-control message-submit">Send Message<img src="images/icons/arrow_right_alt-24px.svg" alt="arrow right"></button>
+                            <textarea name="message" cols="50" rows="10" class="textarea-box" placeholder="Your text here" required></textarea>
+                            <button type="submit" class="button-control message-submit" value="Submit">Send Message<img src="images/icons/arrow_right_alt-24px.svg" alt="arrow right"></button>
                         </div>
                     </form>
                     <!-- End Form area -->

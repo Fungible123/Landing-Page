@@ -199,21 +199,22 @@ p {
     /* Navbar Dropdown */
 
     .has-dropdown .services-dropdown {
-        opacity: 0;
+        display: none;
         height: 0px;
         position: absolute;
-        top: 11%;
+        top: 8%;
         right: 14.5%;
         padding: 0px;
-        transition: 0.5s opacity;
+        transition: 0.5s height;
     }
 
     .has-dropdown:hover .services-dropdown {
-        opacity: 1;
+        display: block;
+        height: 100%;
     }
 
     .services-dropdown.fixed-nav {
-        padding: 70px 0px 0px 0px;
+        padding: 73px 0px 0px 0px;
     }
 
     .services-dropdown li {
@@ -432,6 +433,14 @@ p {
 
     .designs-container>img {
         width: 100%;
+    }
+
+    .designs-container img {
+        border-radius: 6px;
+    }
+
+    .designs-container img:hover {
+        box-shadow: 0 2px 10px 0px rgba(15, 14, 110, 0.25);
     }
 
     /* IE10 + CSS Hack for the Designs container */
@@ -741,19 +750,41 @@ p {
 
 @media (min-width: 768px) {
     .container {
-      width: 750px;
+        width: 750px;
+    }
+
+    .logo {
+        width: 20%;
+    }
+
+    .navigation-bar {
+        width: 80%;
     }
 }
 
 @media (min-width: 992px) {
     .container {
-      width: 970px;
+        width: 970px;
+    }
+
+    .logo {
+        width: 30%;
+    }
+
+    .navigation-bar {
+        width: 70%;
     }
 }
 
 @media (min-width: 1200px) {
     .container {
       width: 1170px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .list-container li {
+        margin-left: 0px;
     }
 }
 
