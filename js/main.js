@@ -15,18 +15,18 @@ window.addEventListener('scroll', function(e) {
     const lastPosition = window.scrollY;
     // When window is scrolled
     if (lastPosition > 50 ) {
-        navigationBar.classList.add("fixed-nav");
-        homeSection.classList.add("fixed-nav");
+        navigationBar.classList.add('fixed-nav');
+        homeSection.classList.add('fixed-nav');
         dropDown.classList.add('fixed-nav');
     // When window is not scrolled
-    } else if (navigationBar.classList.contains("fixed-nav")) {
-        navigationBar.classList.remove("fixed-nav");
-        homeSection.classList.remove("fixed-nav");
+    } else if (navigationBar.classList.contains('fixed-nav')) {
+        navigationBar.classList.remove('fixed-nav');
+        homeSection.classList.remove('fixed-nav');
         dropDown.classList.remove('fixed-nav');
     // When no action is done
     } else {
-        navigationBar.classList.remove("fixed-nav");
-        homeSection.classList.remove("fixed-nav");
+        navigationBar.classList.remove('fixed-nav');
+        homeSection.classList.remove('fixed-nav');
         dropDown.classList.remove('fixed-nav');
     }
 });
