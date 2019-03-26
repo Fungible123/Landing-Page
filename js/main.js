@@ -51,15 +51,22 @@ submitBtn.addEventListener('click', function () {
     document.querySelector('#contact').scrollIntoView(true);
 })
 
-// PRELOADER
-
-window.addEventListener("load", function (){
-    let loader = document.querySelector('.preloader');
-    loader.className += " hidden";
-});
-
 // Modal for Design Images
 
 let lightboxDescription = GLightbox({
     selector: 'glightboxTest'
 });
+
+// Mobile Navbar
+
+const hamburgerButton = () => {
+    const burger = document.querySelector('.hamburger');
+    const navigationPanel = document.querySelector('.navigation-bar');
+
+    burger.addEventListener('click', () => {
+        burger.classList.toggle('is-active');
+        navigationPanel.classList.toggle('open');
+    });
+}
+
+hamburgerButton();
