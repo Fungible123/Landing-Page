@@ -3,7 +3,8 @@
 
 ### Design
 
-- I designed my layout in Figma. Check out the design here https://www.figma.com/file/Qie4VplppRwkFzn1ZcQuWbRR/Landing-Page?node-id=0%3A1
+- I designed my layout in Figma. Check out the design here 
+<iframe style="border: none;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FQie4VplppRwkFzn1ZcQuWbRR%2FLanding-Page%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
 
 ### Technologies:
 
