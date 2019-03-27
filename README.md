@@ -9,9 +9,22 @@
 
 ### Technologies:
 
-- HTML5
-- CSS/CSS3
-- Vanilla Javascript
+#### HTML5
+ - Used semantic elements 
+#### CSS/CSS3
+ - Used transitions and animations to create navigation and click effects
+ - Made a dropdown menu
+ - Created a scroll effect
+ - Made use of transform to create a button
+ - Made use of image modals and hover effects
+ - Made the site responsive
+#### Vanilla Javascript
+ - Used Smooth Scroll for the Navigation links
+ - Developed scroll function for the fixed navigation
+ - Getting the value from the email field and putting it on the contact form
+ - Scroll to Contact section when you click the Get Started button
+ - Created a Modal for Design Images
+ - Developed a Mobile Navbar
 
 ### Struggles:
 
