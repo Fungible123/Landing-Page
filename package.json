@@ -1,0 +1,23 @@
+{
+  "name": "Landing-Page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d Landing-Page"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fungible123/Landing-Page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fungible123/Landing-Page/issues"
+  },
+  "homepage": "https://Fungible123.github.io/Landing-Page",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
