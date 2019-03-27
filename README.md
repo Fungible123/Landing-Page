@@ -1,6 +1,10 @@
 ## Landing-Page Project
 - This is a project landing page website to be used for my portfolio.
 
+### Design
+
+- I designed my layout in Figma. Check out the design here https://www.figma.com/file/Qie4VplppRwkFzn1ZcQuWbRR/Landing-Page?node-id=0%3A1
+
 ### Technologies:
 
 - HTML5
