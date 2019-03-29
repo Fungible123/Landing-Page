@@ -25,6 +25,8 @@
  - Scroll to Contact section when you click the Get Started button
  - Created a Modal for Design Images
  - Developed a Mobile Navbar
+#### Github
+ - Used github pages to publish the website
 
 ### Struggles:
 
