@@ -1,6 +1,8 @@
 ## Landing-Page Project
 - This is a project landing page website to be used for my portfolio.
 
+Published: https://fungible123.github.io/Landing-Page/
+
 ### Design
 
 - I designed my layout in Figma. 
