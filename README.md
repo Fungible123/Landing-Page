@@ -20,6 +20,7 @@ Published: https://fungible123.github.io/Landing-Page/
  - Made use of transform to create a button
  - Made use of image modals and hover effects
  - Made the site responsive
+ - Used a combination of flexbox and css grid
 #### Vanilla Javascript
  - Used Smooth Scroll for the Navigation links
  - Developed scroll function for the fixed navigation
@@ -30,7 +31,7 @@ Published: https://fungible123.github.io/Landing-Page/
 #### Github
  - Used github pages to publish the website
 
-### Struggles:
+### Difficulties:
 
 #### HTML
  - Not that much
